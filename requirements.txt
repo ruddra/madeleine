@@ -1,0 +1,5 @@
+tornado==4.2.1
+twython==3.3.0
+pycountry==1.17
+
+
