@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="{{ static_url('img/favicon.ico') }}">
+
+    <title>Madeleine</title>
+
+    <link href="{{ static_url('css/bootstrap.css') }}" rel="stylesheet">
+
+    <link href="{{ static_url('css/main.css') }}" rel="stylesheet">
+
+    <link href="{{ static_url('css/custom.css') }}" rel="stylesheet">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <script src="{{ static_url('js/bootstrap.min.js') }}"></script>
+
+    <script src="{{ static_url('js/jquery.canvasjs.min.js') }}"></script>
+
+    <script src="{{ static_url('js/custom.js') }}"></script>
+
+</head>
+
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><b>Madeleine</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="headerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Get your statistical data<br/>
+                    through social networking</h1>
+
+                <div class="form-group">
+                    <input type="email" class="form-control madeleine_search" placeholder="Enter your query">
+                </div>
+                <button type="submit" class="btn btn-warning btn-lg madeleine_query">Click!</button>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-responsive" src="{{ static_url('img/ipad-hand.png') }}" alt="">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid madeleine_result" style="display:none;">
+    <div class="centered mt row">
+        <img src="{{ static_url('img/ser01.png') }}" width="50" alt="Twitter">
+        <h2>Twitter</h2>
+        <h3>Twitter User based statistical data</h3>
+    </div>
+
+    <div class="container-fluid twitter-display">
+        <div class="container col-md-6 ">
+            <div id="chartContainerLang" style="height: 300px; width: 100%;"></div>
+        </div>
+        <div class="container col-md-6">
+            <div id="chartContainerLoc" style="height: 300px; width: 100%;"></div>
+        </div>
+    </div>
+    <br/>
+</div>
+
+<div class="container-fluid">
+    <br/>
+</div>
+
+</body>
+
+<footer>
+    <div class="container-fluid centered mt row">
+
+        <p><b>Copyright @<a href="ruddra.com">Arnab Kumar Shil</a></b></p>
+
+    </div>
+
+</footer>
+
+</html>
