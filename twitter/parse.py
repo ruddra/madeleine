@@ -12,10 +12,7 @@ from settings import config
 APP_KEY = config.TWITTER_APP_KEY
 APP_SECRET = config.TWITTER_APP_SCR
 
-# APP_KEY = '1ZSShnzXc2woPfX8fsWj9qpbN'
-# APP_SECRET = 'YtLHFvg0foDOJOnS1f9hLvBBn1RmOWkRI7l2Hv9qyDoXOnvLPa'
-
-twitter_parser = Twython
+package = Twython
 
 
 class TwitterParser(object):
@@ -34,7 +31,7 @@ class TwitterParser(object):
         Gets twitter authentication
         :return:
         """
-        twpy = twitter_parser(APP_KEY, APP_SECRET, oauth_version=2)
+        twpy = package(APP_KEY, APP_SECRET, oauth_version=2)
         ACCESS_TOKEN = twpy.obtain_access_token()
         self.twitter = Twython(APP_KEY, access_token=ACCESS_TOKEN)
 
